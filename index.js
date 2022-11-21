@@ -4,9 +4,7 @@ const os = require("os");
 const fs = require("fs");
 const cors = require("cors");
 
-app.use(cors({
-    orgin : "https://famous-basbousa-16f23d.netlify.app"
-}))
+app.use(express.json());
 
 
 app.get("/filecreate", (req, res) => {
